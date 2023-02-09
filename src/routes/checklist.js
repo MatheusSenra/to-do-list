@@ -2,6 +2,8 @@ const express = require('express')
 
 const router = express.Router();
 
+const Checklist = require('../models/checklist')
+
 router.get('/', (req, res) => {
     console.log('ola');
     res.send();
@@ -22,9 +24,17 @@ router.delete('/:id', (req, res) => {
     res.send(`Delete: ${req.params.id}`);
 })
 
-router.post('/', (req, res) => {
-    console.log(req.body);
-    res.status(200).send(req.body);
+router.post('/', async (req, res) => {
+    
+    let { name } = req.body;
+
+    try {
+        let checklist = await Checklist.create({ name })
+        res.status(200).json(checklist);
+    } catch (error) {
+        res.status(422).json(error)
+    }
+
 })
 
 module.exports = router;

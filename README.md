@@ -16,7 +16,8 @@
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
+É necessário também alterar as informações no arquivo <i>.env</i> preenchendo-o com suas informações de conexão ao banco.
 
 ### 🎲 Rodando o Back End (servidor)
 
@@ -34,3 +35,4 @@ $ npm install
 $ npm run dev
 
 # O servidor inciará na porta:3000
+# Um alerta de sucesso de conexão ao banco será exibido
