@@ -1,5 +1,9 @@
 # Lista de Tarefas
 
+<h4 align="center"> 
+	🚧  Ainda 🚀 Em construção...  🚧
+</h4>
+
 ## lista simples de tarefas utilizando NodeJS, Express e MondoDB
 
 ### Features
@@ -30,7 +34,3 @@ $ npm install
 $ npm run dev
 
 # O servidor inciará na porta:3000
-
-<h4 align="center"> 
-	🚧  Ainda 🚀 Em construção...  🚧
-</h4>
