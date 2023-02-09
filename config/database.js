@@ -6,8 +6,6 @@ require('dotenv').config({
 mongoose.Promise = global.Promise;
 mongoose.set('strictQuery', true)
 
-console.log(process.env.NODE_ENV)
-
 const uri = 'mongodb://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@' + process.env.DB_HOST
 
 mongoose.connect( uri, { useNewUrlParser: true, useUnifiedTopology: true})
